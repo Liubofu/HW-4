@@ -65,6 +65,19 @@ public class Main {
             System.out.println("Ребенку " + childAge3 + " лет, ему можно кататься без сопровождения взрослого.");
         }
 
+        System.out.println("Задача 6");
+
+        int places = 102;
+        int sitPlaces = 60;
+        int passengers = 75;
+        if (passengers < 60) {
+            System.out.println("Есть сидячие месты.");
+        } else if (passengers < 102) {
+            System.out.println("В вагоне есть стоячие места, но нет сидячих.");
+        } else {
+            System.out.println("Вагон полон, свободных мест нет.");
+        }
+
         System.out.println("Задача 7");
 
         int a = 10;
@@ -78,3 +91,6 @@ public class Main {
             System.out.println("c - наибольшее число");
         }
     }
+}
+
+
