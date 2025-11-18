@@ -22,11 +22,11 @@ public class Main {
 
         int temperature = 1;
         if (temperature < 5) {
-            System.out.println("На улице 1 градус, нужно надеть шапку.");
+            System.out.println("На улице " + temperature + " градус, нужно надеть шапку.");
         }
         int temperature2 = 7;
         if (temperature2 > 5) {
-            System.out.println("На улице 7 градусов, можно идти без шапки.");
+            System.out.println("На улице " + temperature2 + " градусов, можно идти без шапки.");
         }
         System.out.println("Задача 3");
 
@@ -37,7 +37,7 @@ public class Main {
             System.out.println("Если скорость меньше или равна 60 км в час, можно ехать спокойно.");
         }
         int speed2 = 45;
-        if (speed2 < 60) {
+        if (speed2 <= 60) {
             System.out.println("Если скорость меньше или равна 60 км в час, можно ехать спокойно.");
         } else {
             System.out.println("Если скорость превышает 60 км в час, то придется заплатить штраф.");
@@ -53,16 +53,28 @@ public class Main {
         System.out.println("Задача 5");
 
         int childAge = 3;
-        if (childAge < 5 ) {
-            System.out.println("Возраст ребенка меньше 5 лет, можно кататься на аттракционе.");
+        if (childAge < 5) {
+            System.out.println("Возраст ребенка " + childAge + " ему нельзя кататься на аттракционе.");
         }
         int childAge2 = 13;
         if (childAge2 > 5 && childAge2 <= 14) {
-            System.out.println("Возраст ребенка 13 лет, можно кататься только в сопровождении взрослого.");
+            System.out.println("Возраст ребенка " + childAge2 + " лет, ему можно кататься только в сопровождении взрослого.");
         }
         int childAge3 = 15;
         if (childAge3 > 14) {
-            System.out.println("Ребенок старше 14 лет, можно кататься без сопровождения взрослого.");
+            System.out.println("Ребенку " + childAge3 + " лет, ему можно кататься без сопровождения взрослого.");
         }
+
+        System.out.println("Задача 7");
+
+        int a = 10;
+        int b = 25;
+        int c = 15;
+        if (a >= b && a >= c) {
+            System.out.println("a - наибольшее число");
+        } else if (b >= a && b >= c) {
+            System.out.println("b - наибольшее число");
+        } else {
+            System.out.println("c - наибольшее число");
         }
     }
