@@ -1,3 +1,5 @@
+import com.sun.security.jgss.GSSUtil;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -23,11 +25,10 @@ public class Main {
         int temperature = 1;
         if (temperature < 5) {
             System.out.println("На улице " + temperature + " градус, нужно надеть шапку.");
+        } else {
+            System.out.println("На улице тепло, можно не одевать шапку.");
         }
-        int temperature2 = 7;
-        if (temperature2 > 5) {
-            System.out.println("На улице " + temperature2 + " градусов, можно идти без шапки.");
-        }
+
         System.out.println("Задача 3");
 
         int speed = 75;
@@ -46,8 +47,14 @@ public class Main {
         System.out.println("Задача 4");
 
         int agePerson = 23;
-        if (agePerson >= 18 && agePerson <= 24) {
+        if (agePerson >= 2 && agePerson <=6) {
+            System.out.println("Ему нужно ходить в детский сад.");
+        } else if (agePerson >= 7 && agePerson <= 17) {
+            System.out.println("Ему нужно ходить в школу.");
+        } else if (agePerson >= 18 && agePerson <= 24) {
             System.out.println("Вам нужно ходить в университет.");
+        } else if (agePerson > 24) {
+            System.out.println("Ему нужно ходить на работу.");
         }
 
         System.out.println("Задача 5");
